@@ -5,7 +5,7 @@ import random
 import io
 import math
 
-BOT_TOKEN = ""
+BOT_TOKEN = "8001601776:AAHZilOQnrb3eWKN3bLIn-3gnqRD-aY7l_E"
 
 users = {}
 
