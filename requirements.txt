@@ -1,3 +1,2 @@
-Collecting python-telegram-bot==20.7
-Installing collected packages: python-telegram-bot
-Successfully installed python-telegram-bot-20.7
+python-telegram-bot==20.7
+Pillow
