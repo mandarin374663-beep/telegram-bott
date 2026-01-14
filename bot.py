@@ -63,10 +63,10 @@ def generate_code_image(code: str):
 
 def get_buttons():
     keyboard = [
-        [InlineKeyboardButton("⚜️ОПЕРАТОР ТАШКЕНТ⚜️", url="https://t.me/tw")],
-        [InlineKeyboardButton("⚜️ТЕХ Поддержка⚜️", url="https://t.me/evcn")],
-        [InlineKeyboardButton("🔱ОПЕРАТОР ПРИГОРОД🔱", url="https://t.me/yzc")],
-        [InlineKeyboardButton("🔱ТЕХ Поддержка ПРИГОРОД🔱", url="https://t.me/yzb")],
+        [InlineKeyboardButton("⚜️ОПЕРАТОР ТАШКЕНТ⚜️", url="https://t.me/twc29")],
+        [InlineKeyboardButton("⚜️ТЕХ Поддержка⚜️", url="https://t.me/evcvcn")],
+        [InlineKeyboardButton("🔱ОПЕРАТОР ПРИГОРОД🔱", url="https://t.me/yzczc")],
+        [InlineKeyboardButton("🔱ТЕХ Поддержка ПРИГОРОД🔱", url="https://t.me/yzbzb")],
     ]
     return InlineKeyboardMarkup(keyboard)
 
@@ -94,7 +94,7 @@ async def check_code(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if update.message.text == users[user_id]["code"]:
         users[user_id]["verified"] = True
-        message_text = "⚡️Вас приветствует Tesla Shop⚡️\nЕсли вам нужна помощь с покупкой, пожалуйста, свяжитесь с оператором."
+        message_text = "⚡️Вас приветствует Tesla Shop⚡️\nЕсли вам нужна помощь с покупкой, пожалуйста, свяжитесь с ОПЕРАТОР ПРИГОРОД."
         await update.message.reply_text(message_text, reply_markup=get_buttons())
     else:
         new_code = str(random.randint(10000, 99999))
